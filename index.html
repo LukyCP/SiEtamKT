@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <style>
+        body {
+            font-family: Helvetica Neue, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f6f6;
+        }
+        .header {
+            background-color: #07080792;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .main {
+            padding: 2rem;
+            text-align: center;
+        }
+        .main h1 {
+            font-size: 3rem;
+            animation: bounceIn 2s;
+        }
+        .main p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            animation: slideIn 2s;
+        }
+        .cta {
+            margin-top: 2rem;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #0b4b03;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            animation: pulse 2s infinite;
+        }
+        .cta a:hover {
+            background: linear-gradient(135deg, #218838, #76c823);
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .links a {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            animation: fadeIn 3s;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .image-header {
+            width: 20%;
+            height: auto;
+            margin-top: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); }
+            50% { transform: scale(1.1); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.5); }
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Selamat Datang Si Etam</h1>
+    </div>
+    <div class="main">
+        <h1>Sistem Informasi Elektronik Terpadu Aktual Mandiri</h1>
+        <p>Sistem informasi ini dibangun untuk memudahkan pegawai Balai Besar Karantina Hewan, Ikan dan Tumbuhan Kalimantan Timur memperoleh Informasi.</p>
+        <p>Semoga Bermanfaat.</p>
+        <img src="sietam.jpg" alt="Gambar Header" class="image-header">
+        <div class="cta">
+            <div class="links">
+                <a href="#link1">Karantina Hewan</a>
+                <a href="#link2">Karantina Ikan</a>
+                <a href="https://bit.ly/3z5jium" target="_blank">Karantina Tumbuhan</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Created by LCP. Semua Hak Dilindungi.</p>
+    </div>
+</body>
+</html>
